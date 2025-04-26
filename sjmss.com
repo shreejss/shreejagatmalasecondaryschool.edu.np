@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Jagatmala Secondary School - Excellence in Education Since 2036 B.S.</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center" data-aos="fade-right">
+                    <img src="https://i.ibb.co/XL3D7F2/school-logo.png" alt="School Logo" class="w-12 h-12 mr-3">
+                    <div>
+                        <div class="text-primary font-bold text-xl lang-en">Shree Jagatmala Secondary School</div>
+                        <div class="text-primary font-bold text-xl lang-np hidden">श्री जगतमाला माध्यमिक विद्यालय</div>
+                        <div class="text-gray text-xs lang-en">Established: 2036 B.S. (1979 A.D.)</div>
+                        <div class="text-gray text-xs lang-np hidden">स्थापना: २०३६ साल</div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center">
+                    <ul class="flex space-x-6">
+                        <li><a href="#home" class="nav-link active text-dark hover:text-primary lang-en">Home</a></li>
+                        <li><a href="#home" class="nav-link active text-dark hover:text-primary lang-np hidden">गृहपृष्ठ</a></li>
+                        
+                        <li><a href="#about" class="nav-link text-dark hover:text-primary lang-en">About</a></li>
+                        <li><a href="#about" class="nav-link text-dark hover:text-primary lang-np hidden">परिचय</a></li>
+                        
+                        <li><a href="#academics" class="nav-link text-dark hover:text-primary lang-en">Academics</a></li>
+                        <li><a href="#academics" class="nav-link text-dark hover:text-primary lang-np hidden">शैक्षिक</a></li>
+                        
+                        <li><a href="#faculty" class="nav-link text-dark hover:text-primary lang-en">Faculty</a></li>
+                        <li><a href="#faculty" class="nav-link text-dark hover:text-primary lang-np hidden">शिक्षकहरू</a></li>
+                        
+                        <li><a href="#news" class="nav-link text-dark hover:text-primary lang-en">News</a></li>
+                        <li><a href="#news" class="nav-link text-dark hover:text-primary lang-np hidden">समाचार</a></li>
+                        
+                        <li><a href="#gallery" class="nav-link text-dark hover:text-primary lang-en">Gallery</a></li>
+                        <li><a href="#gallery" class="nav-link text-dark hover:text-primary lang-np hidden">ग्यालरी</a></li>
+                        
+                        <li><a href="#contact" class="nav-link text-dark hover:text-primary lang-en">Contact</a></li>
+                        <li><a href="#contact" class="nav-link text-dark hover:text-primary lang-np hidden">सम्पर्क</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Language Toggle & Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <div class="lang-toggle">
+                        <div class="lang-switch" id="langSwitch"></div>
+                        <div class="lang-option lang-active" id="enOption">EN</div>
+                        <div class="lang-option" id="npOption">NP</div>
+                    </div>
+                    
+                    <button class="md:hidden text-dark menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <span class="menu-close" id="menuClose">
+            <i class="fas fa-times"></i>
+        </span>
+        <ul>
+            <li><a href="#home" class="mobile-nav-link lang-en">Home</a></li>
+            <li><a href="#home" class="mobile-nav-link lang-np hidden">गृहपृष्ठ</a></li>
+            
+            <li><a href="#about" class="mobile-nav-link lang-en">About</a></li>
+            <li><a href="#about" class="mobile-nav-link lang-np hidden">परिचय</a></li>
+            
+            <li><a href="#academics" class="mobile-nav-link lang-en">Academics</a></li>
+            <li><a href="#academics" class="mobile-nav-link lang-np hidden">शैक्षिक</a></li>
+            
+            <li><a href="#faculty" class="mobile-nav-link lang-en">Faculty</a></li>
+            <li><a href="#faculty" class="mobile-nav-link lang-np hidden">शिक्षकहरू</a></li>
+            
+            <li><a href="#news" class="mobile-nav-link lang-en">News</a></li>
+            <li><a href="#news" class="mobile-nav-link lang-np hidden">समाचार</a></li>
+            
+            <li><a href="#gallery" class="mobile-nav-link lang-en">Gallery</a></li>
+            <li><a href="#gallery" class="mobile-nav-link lang-np hidden">ग्यालरी</a></li>
+            
+            <li><a href="#contact" class="mobile-nav-link lang-en">Contact</a></li>
+            <li><a href="#contact" class="mobile-nav-link lang-np hidden">सम्पर्क</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center relative pt-24">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 lang-en">Welcome to Shree Jagatmala Secondary School</h1>
+                    <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 lang-np hidden">श्री जगतमाला माध्यमिक विद्यालयमा स्वागत छ</h1>
+                    
+                    <p class="text-white text-lg mb-8 lang-en">Excellence in Education Since 2036 B.S. (1979 A.D.)</p>
+                    <p class="text-white text-lg mb-8 lang-np hidden">२०३६ सालदेखि शैक्षिक उत्कृष्टता</p>
+                    
+                    <p class="text-white mb-10 lang-en">Shree Jagatmala Secondary School is committed to providing quality education to the students of Mugu district and surrounding areas. Our school combines traditional values with modern teaching methodologies to create a nurturing environment for students to excel.</p>
+                    <p class="text-white mb-10 lang-np hidden">श्री जगतमाला माध्यमिक विद्यालय मुगु जिल्ला र वरिपरिका क्षेत्रका विद्यार्थीहरूलाई गुणस्तरीय शिक्षा प्रदान गर्न प्रतिबद्ध छ। हाम्रो विद्यालयले विद्यार्थीहरूको उत्कृष्टताका लागि पोषण वातावरण सिर्जना गर्न परम्परागत मूल्यहरूलाई आधुनिक शिक्षण पद्धतिहरूसँग जोड्छ।</p>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#about" class="btn-primary lang-en">Learn More</a>
+                        <a href="#about" class="btn-primary lang-np hidden">थप जान्नुहोस्</a>
+                        
+                        <a href="#contact" class="btn-secondary lang-en">Contact Us</a>
+                        <a href="#contact" class="btn-secondary lang-np hidden">सम्पर्क गर्नुहोस्</a>
+                    </div>
+                </div>
+                <div class="hidden md:block" data-aos="fade-left">
+                    <img src="https://i.ibb.co/9cLHFVP/school-building.jpg" alt="School Building" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="counter-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="counter" data-target="45">0</div>
+                    <p class="lang-en">Years of Excellence</p>
+                    <p class="lang-np hidden">उत्कृष्टताका वर्षहरू</p>
+                </div>
+                <div class="counter-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="counter" data-target="1200">0</div>
+                    <p class="lang-en">Students</p>
+                    <p class="lang-np hidden">विद्यार्थीहरू</p>
+                </div>
+                <div class="counter-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="counter" data-target="65">0</div>
+                    <p class="lang-en">Faculty Members</p>
+                    <p class="lang-np hidden">शिक्षकहरू</p>
+                </div>
+                <div class="counter-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="counter" data-target="98">0</div>
+                    <p class="lang-en">Pass Percentage</p>
+                    <p class="lang-np hidden">उत्तीर्ण प्रतिशत</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark section-heading lang-en">About Our School</h2>
+                <h2 class="text-3xl font-bold text-dark section-heading lang-np hidden">हाम्रो विद्यालयको बारेमा</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="https://i.ibb.co/XFSC3rg/school-history.jpg" alt="School History" class="rounded-lg">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-primary mb-4 lang-en">Our History</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-4 lang-np hidden">हाम्रो इतिहास</h3>
+                    
+                    <p class="mb-4 lang-en">Established in 2036 B.S. (1979 A.D.), Shree Jagatmala Secondary School began as a small community school with just three classrooms and a handful of students. Under the leadership of our founding principal, the school grew steadily over the years.</p>
+                    <p class="mb-4 lang-np hidden">२०३६ सालमा स्थापित, श्री जगतमाला माध्यमिक विद्यालय केवल तीन कक्षाकोठा र केही विद्यार्थीहरूको साथ एक सानो सामुदायिक विद्यालयको रूपमा सुरु भएको थियो। हाम्रो संस्थापक प्रधानाध्यापकको नेतृत्वमा, विद्यालय बर्षेनि स्थिर रूपमा बढ्दै गयो।</p>
+                    
+                    <p class="mb-4 lang-en">Located in Soru-11, Mugu district of Karnali Province, our school has been serving the educational needs of the remote mountainous region for over four decades. Despite the geographical challenges, we have maintained high standards of education and produced numerous successful graduates who now serve in various sectors across Nepal and abroad.</p>
+                    <p class="mb-4 lang-np hidden">कर्णाली प्रदेशको मुगु जिल्लाको सोरु-११ मा अवस्थित, हाम्रो विद्यालयले चार दशकभन्दा बढी समयदेखि दुर्गम पहाडी क्षेत्रको शैक्षिक आवश्यकताहरूको सेवा गर्दै आएको छ। भौगोलिक चुनौतीहरू हुँदाहुँदै पनि, हामीले शिक्षाको उच्च मापदण्ड कायम राखेका छौं र धेरै सफल स्नातकहरू उत्पादन गरेका छौं जो अहिले नेपाल र विदेशका विभिन्न क्षेत्रहरूमा सेवा गर्दैछन्।</p>
+                    
+                    <p class="lang-en">Today, under the leadership of our principal, Mr. Narajit Malla, we continue to strive for excellence while preserving our cultural heritage and traditional values.</p>
+                    <p class="lang-np hidden">आज, हाम्रो प्रधानाध्यापक, श्री नरजित मल्लको नेतृत्वमा, हामी हाम्रो सांस्कृतिक सम्पदा र परम्परागत मूल्यहरू संरक्षण गर्दै उत्कृष्टताको लागि प्रयास गर्न जारी राख्छौं।</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+                <div class="order-2 md:order-1" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-primary mb-4 lang-en">Our Vision & Mission</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-4 lang-np hidden">हाम्रो दृष्टि र मिशन</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-2 lang-en">Vision</h4>
+                        <h4 class="text-xl font-semibold mb-2 lang-np hidden">दृष्टि</h4>
+                        <p class="lang-en">To be a center of academic excellence that nurtures intellectually curious, socially conscious, and culturally rooted individuals who contribute positively to their communities and beyond.</p>
+                        <p class="lang-np hidden">बौद्धिक रूपमा जिज्ञासु, सामाजिक रूपमा सचेत, र सांस्कृतिक रूपमा जरा भएका व्यक्तिहरूलाई पोषण गर्ने शैक्षिक उत्कृष्टताको केन्द्र बन्नु जसले आफ्नो समुदाय र त्यसभन्दा बाहिर सकारात्मक योगदान पुर्याउँछन्।</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2 lang-en">Mission</h4>
+                        <h4 class="text-xl font-semibold mb-2 lang-np hidden">मिशन</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li class="lang-en">Provide quality education accessible to all students regardless of their socioeconomic background</li>
+                            <li class="lang-np hidden">सबै विद्यार्थीहरूलाई उनीहरूको सामाजिक-आर्थिक पृष्ठभूमि जे भए तापनि गुणस्तरीय शिक्षा प्रदान गर्ने</li>
+                            
+                            <li class="lang-en">Foster critical thinking, creativity, and problem-solving skills</li>
+                            <li class="lang-np hidden">आलोचनात्मक सोच, सृजनशीलता, र समस्या-समाधान सीपहरूको विकास गर्ने</li>
+                            
+                            <li class="lang-en">Promote cultural awareness and heritage preservation</li>
+                            <li class="lang-np hidden">सांस्कृतिक जागरूकता र सम्पदा संरक्षणलाई प्रोत्साहन गर्ने</li>
+                            
+                            <li class="lang-en">Build character, discipline, and ethical values</li>
+                            <li class="lang-np hidden">चरित्र, अनुशासन, र नैतिक मूल्यहरूको निर्माण गर्ने</li>
+                            
+                            <li class="lang-en">Prepare students for higher education and global citizenship</li>
+                            <li class="lang-np hidden">विद्यार्थीहरूलाई उच्च शिक्षा र विश्वव्यापी नागरिकताको लागि तयार गर्ने</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 about-img" data-aos="fade-left">
+                    <img src="https://i.ibb.co/qgJ4RVZ/school-vision.jpg" alt="Vision and Mission" class="rounded-lg">
+                </div>
+            </div>
+            
+            <div class="text-center mb-12">
+                <h3 class="text-2xl font-bold text-primary mb-4 lang-en">Our Milestones</h3>
+                <h3 class="text-2xl font-bold text-primary mb-4 lang-np hidden">हाम्रा उपलब्धिहरू</h3>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item timeline-left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h4 class="font-bold text-primary mb-1 lang-en">2036 B.S. (1979 A.D.)</h4>
+                        <h4 class="font-bold text-primary mb-1 lang-np hidden">२०३६ साल</h4>
+                        <p class="lang-en">Establishment of Shree Jagatmala Lower Secondary School</p>
+                        <p class="lang-np hidden">श्री जगतमाला निम्न माध्यमिक विद्यालयको स्थापना</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h4 class="font-bold text-primary mb-1 lang-en">2045 B.S. (1988 A.D.)</h4>
+                        <h4 class="font-bold text-primary mb-1 lang-np hidden">२०४५ साल</h4>
+                        <p class="lang-en">Upgraded to Secondary Level (Grade 10)</p>
+                        <p class="lang-np hidden">माध्यमिक तह (कक्षा १०) मा स्तरोन्नति</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h4 class="font-bold text-primary mb-1 lang-en">2057 B.S. (2000 A.D.)</h4>
+                        <h4 class="font-bold text-primary mb-1 lang-np hidden">२०५७ साल</h4>
+                        <p class="lang-en">Construction of new school building</p>
+                        <p class="lang-np hidden">नयाँ विद्यालय भवन निर्माण</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h4 class="font-bold text-primary mb-1 lang-en">2065 B.S. (2008 A.D.)</h4>
+                        <h4 class="font-bold text-primary mb-1 lang-np hidden">२०६५ साल</h4>
+                        <p class="lang-en">Upgraded to Higher Secondary Level (Grade 12)</p>
+                        <p class="lang-np hidden">उच्च माध्यमिक तह (कक्षा १२) मा स्तरोन्नति</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h4 class="font-bold text-primary mb-1 lang-en">2072 B.S. (2015 A.D.)</h4>
+                        <h4 class="font-bold text-primary mb-1 lang-np hidden">२०७२ साल</h4>
+                        <p class="lang-en">Establishment of Computer Lab and Science Laboratory</p>
+                        <p class="lang-np hidden">कम्प्युटर ल्याब र विज्ञान प्रयोगशालाको स्थापना</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h4 class="font-bold text-primary mb-1 lang-en">2079 B.S. (2022 A.D.)</h4>
+                        <h4 class="font-bold text-primary mb-1 lang-np hidden">२०७९ साल</h4>
+                        <p class="lang-en">Renovation and expansion of school facilities</p>
+                        <p class="lang-np hidden">विद्यालय सुविधाहरूको नवीकरण र विस्तार</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Academics Section -->
+    <section id="academics" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark section-heading lang-en">Academic Programs</h2>
+                <h2 class="text-3xl font-bold text-dark section-heading lang-np hidden">शैक्षिक कार्यक्रमहरू</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box mx-auto">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary text-center mb-4 lang-en">Basic Level (Grades 1-8)</h3>
+                    <h3 class="text-xl font-bold text-primary text-center mb-4 lang-np hidden">आधारभूत तह (कक्षा १-८)</h3>
+                    
+                    <p class="text-center mb-4 lang-en">Our basic level program focuses on building a strong foundation in core subjects while nurturing creativity and curiosity in young learners.</p>
+                    <p class="text-center mb-4 lang-np hidden">हाम्रो आधारभूत तह कार्यक्रमले मुख्य विषयहरूमा बलियो आधार निर्माण गर्दै साना सिकारुहरूमा सृजनशीलता र जिज्ञासा विकास गर्नेमा केन्द्रित छ।</p>
+                    
+                    <h4 class="font-semibold mb-2 text-center lang-en">Key Subjects</h4>
+                    <h4 class="font-semibold mb-2 text-center lang-np hidden">मुख्य विषयहरू</h4>
+                    
+                    <ul class="list-disc pl-8 space-y-1">
+                        <li class="lang-en">Nepali</li>
+                        <li class="lang-np hidden">नेपाली</li>
+                        
+                        <li class="lang-en">English</li>
+                        <li class="lang-np hidden">अंग्रेजी</li>
+                        
+                        <li class="lang-en">Mathematics</li>
+                        <li class="lang-np hidden">गणित</li>
+                        
+                        <li class="lang-en">Science</li>
+                        <li class="lang-np hidden">विज्ञान</li>
+                        
+                        <li class="lang-en">Social Studies</li>
+                        <li class="lang-np hidden">सामाजिक अध्ययन</li>
+                        
+                        <li class="lang-en">Health & Physical Education</li>
+                        <li class="lang-np hidden">स्वास्थ्य र शारीरिक शिक्षा</li>
+                        
+                        <li class="lang-en">Moral Education</li>
+                        <li class="lang-np hidden">नैतिक शिक्षा</li>
+                    </ul>
+                </div>
+                
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box mx-auto">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary text-center mb-4 lang-en">Secondary Level (Grades 9-10)</h3>
+                    <h3 class="text-xl font-bold text-primary text-center mb-4 lang-np hidden">माध्यमिक तह (कक्षा ९-१०)</h3>
+                    
+                    <p class="text-center mb-4 lang-en">Our secondary level prepares students for the SEE (Secondary Education Examination) with comprehensive coverage of the national curriculum and additional support classes.</p>
+                    <p class="text-center mb-4 lang-np hidden">हाम्रो माध्यमिक तहले राष्ट्रिय पाठ्यक्रमको व्यापक कभरेज र अतिरिक्त सहयोग कक्षाहरूको साथ एसईई (माध्यमिक शिक्षा परीक्षा) को लागि विद्यार्थीहरूलाई तयार गर्दछ।</p>
+                    
+                    <h4 class="font-semibold mb-2 text-center lang-en">Key Subjects</h4>
+                    <h4 class="font-semibold mb-2 text-center lang-np hidden">मुख्य विषयहरू</h4>
+                    
+                    <ul class="list-disc pl-8 space-y-1">
+                        <li class="lang-en">Nepali</li>
+                        <li class="lang-np hidden">नेपाली</li>
+                        
+                        <li class="lang-en">English</li>
+                        <li class="lang-np hidden">अंग्रेजी</li>
+                        
+                        <li class="lang-en">Mathematics</li>
+                        <li class="lang-np hidden">गणित</li>
+                        
+                        <li class="lang-en">Science</li>
+                        <li class="lang-np hidden">विज्ञान</li>
+                        
+                        <li class="lang-en">Social Studies</li>
+                        <li class="lang-np hidden">सामाजिक अध्ययन</li>
+                        
+                        <li class="lang-en">Health & Physical Education</li>
+                        <li class="lang-np hidden">स्वास्थ्य र शारीरिक शिक्षा</li>
+                        
+                        <li class="lang-en">Optional I (Computer Science)</li>
+                        <li class="lang-np hidden">ऐच्छिक I (कम्प्युटर विज्ञान)</li>
+                        
+                        <li class="lang-en">Optional II (Account/Economics)</li>
+                        <li class="lang-np hidden">ऐच्छिक II (लेखा/अर्थशास्त्र)</li>
+                    </ul>
+                </div>
+                
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box mx-auto">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary text-center mb-4 lang-en">Higher Secondary (Grades 11-12)</h3>
+                    <h3 class="text-xl font-bold text-primary text-center mb-4 lang-np hidden">उच्च माध्यमिक (कक्षा ११-१२)</h3>
+                    
+                    <p class="text-center mb-4 lang-en">Our higher secondary program offers specialized streams to prepare students for university education and future careers with focus on practical learning and career guidance.</p>
+                    <p class="text-center mb-4 lang-np hidden">हाम्रो उच्च माध्यमिक कार्यक्रमले व्यावहारिक सिकाई र करियर मार्गदर्शनमा ध्यान केन्द्रित गर्दै विद्यार्थीहरूलाई विश्वविद्यालय शिक्षा र भविष्यको करियरका लागि तयार पार्न विशेष धाराहरू प्रदान गर्दछ।</p>
+                    
+                    <h4 class="font-semibold mb-2 text-center lang-en">Available Streams</h4>
+                    <h4 class="font-semibold mb-2 text-center lang-np hidden">उपलब्ध धाराहरू</h4>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="font-medium lang-en">Science Stream</h5>
+                            <h5 class="font-medium lang-np hidden">विज्ञान धारा</h5>
+                            <ul class="list-disc pl-8 space-y-1">
+                                <li class="lang-en">Physics, Chemistry, Biology/Mathematics</li>
+                                <li class="lang-np hidden">भौतिकशास्त्र, रसायनशास्त्र, जीवविज्ञान/गणित</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-medium lang-en">Management Stream</h5>
+                            <h5 class="font-medium lang-np hidden">व्यवस्थापन धारा</h5>
+                            <ul class="list-disc pl-8 space-y-1">
+                                <li class="lang-en">Accountancy, Economics, Business Studies</li>
+                                <li class="lang-np hidden">लेखा, अर्थशास्त्र, व्यापार अध्ययन</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-medium lang-en">Education Stream</h5>
+                            <h5 class="font-medium lang-np hidden">शिक्षा धारा</h5>
+                            <ul class="list-disc pl-8 space-y-1">
+                                <li class="lang-en">English Education, Nepali Education, Mathematics Education</li>
+                                <li class="lang-np hidden">अंग्रेजी शिक्षा, नेपाली शिक्षा, गणित शिक्षा</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-bold text-primary mb-4 lang-en">School Facilities</h3>
+                        <h3 class="text-2xl font-bold text-primary mb-4 lang-np hidden">विद्यालय सुविधाहरू</h3>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="text-primary text-xl mt-1">
+                                    <i class="fas fa-laptop animated-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold lang-en">Computer Lab</h4>
+                                    <h4 class="font-semibold lang-np hidden">कम्प्युटर ल्याब</h4>
+                                    <p class="text-sm lang-en">Modern lab with 25 computers</p>
+                                    <p class="text-sm lang-np hidden">२५ कम्प्युटरहरू भएको आधुनिक ल्याब</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="text-primary text-xl mt-1">
+                                    <i class="fas fa-flask animated-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold lang-en">Science Lab</h4>
+                                    <h4 class="font-semibold lang-np hidden">विज्ञान प्रयोगशाला</h4>
+                                    <p class="text-sm lang-en">Well-equipped physics, chemistry and biology labs</p>
+                                    <p class="text-sm lang-np hidden">राम्रोसँग सुसज्जित भौतिकशास्त्र, रसायनशास्त्र र जीवविज्ञान प्रयोगशालाहरू</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="text-primary text-xl mt-1">
+                                    <i class="fas fa-book animated-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold lang-en">Library</h4>
+                                    <h4 class="font-semibold lang-np hidden">पुस्तकालय</h4>
+                                    <p class="text-sm lang-en">Over 5,000 books and reference materials</p>
+                                    <p class="text-sm lang-np hidden">५,००० भन्दा बढी पुस्तकहरू र सन्दर्भ सामग्रीहरू</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="text-primary text-xl mt-1">
+                                    <i class="fas fa-futbol animated-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold lang-en">Sports Facilities</h4>
+                                    <h4 class="font-semibold lang-np hidden">खेलकुद सुविधाहरू</h4>
+                                    <p class="text-sm lang-en">Playground, volleyball and basketball courts</p>
+                                    <p class="text-sm lang-np hidden">खेल मैदान, भलिबल र बास्केटबल कोर्टहरू</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="text-primary text-xl mt-1">
+                                    <i class="fas fa-wifi animated-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold lang-en">Wi-Fi Campus</h4>
+                                    <h4 class="font-semibold lang-np hidden">वाई-फाई क्याम्पस</h4>
+                                    <p class="text-sm lang-en">High-speed internet throughout the campus</p>
+                                    <p class="text-sm lang-np hidden">क्याम्पस भरि उच्च-गतिको इन्टरनेट</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3 mb-4">
+                                <div class="text-primary text-xl mt-1">
+                                    <i class="fas fa-music animated-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold lang-en">Arts & Music Room</h4>
+                                    <h4 class="font-semibold lang-np hidden">कला र संगीत कक्ष</h4>
+                                    <p class="text-sm lang-en">Dedicated space for creative activities</p>
+                                    <p class="text-sm lang-np hidden">सृजनात्मक गतिविधिहरूका लागि समर्पित स्थान</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-left">
+                        <img src="https://i.ibb.co/pQmvgBH/school-facilities.jpg" alt="School Facilities" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Faculty Section -->
+    <section id="faculty" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark section-heading lang-en">Our Faculty</h2>
+                <h2 class="text-3xl font-bold text-dark section-heading lang-np hidden">हाम्रा शिक्षकहरू</h2>
+            </div>
+            
+            <div class="flex justify-center mb-16">
+                <div class="w-full max-w-sm" data-aos="fade-up">
+                    <div class="faculty-card">
+                        <div class="faculty-img">
+                            <img src="https://i.ibb.co/LQCnZ7P/principal.jpg" alt="Principal">
+                        </div>
+                        <div class="faculty-info text-center">
+                            <h3 class="text-xl font-bold text-primary lang-en">Mr. Narajit Malla</h3>
+                            <h3 class="text-xl font-bold text-primary lang-np hidden">श्री नरजित मल्ल</h3>
+                            
+                            <p class="text-gray-600 mb-4 lang-en">Principal</p>
+                            <p class="text-gray-600 mb-4 lang-np hidden">प्रधानाध्यापक</p>
+                            
+                            <p class="mb-4 lang-en">M.Ed. in Educational Leadership (Tribhuvan University)</p>
+                            <p class="mb-4 lang-np hidden">एम.एड. शैक्षिक नेतृत्व (त्रिभुवन विश्वविद्यालय)</p>
+                            
+                            <p class="lang-en">Over 25 years of teaching and administrative experience in education sector.</p>
+                            <p class="lang-np hidden">शिक्षा क्षेत्रमा २५ वर्षभन्दा बढीको शिक्षण र प्रशासनिक अनुभव।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/FHD9fpj/teacher-1.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center">
+                        <h3 class="font-semibold lang-en">Mrs. Sabita Bhandari</h3>
+                        <h3 class="font-semibold lang-np hidden">श्रीमती सबिता भण्डारी</h3>
+                        
+                        <p class="text-gray-600 mb-2 lang-en">Vice Principal</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">उप-प्रधानाध्यापक</p>
+                        
+                        <p class="text-sm lang-en">M.A. in Nepali</p>
+                        <p class="text-sm lang-np hidden">एम.ए. नेपालीमा</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/T0d9Qrd/teacher-2.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center">
+                        <h3 class="font-semibold lang-en">Mr. Ramesh Budha</h3>
+                        <h3 class="font-semibold lang-np hidden">श्री रमेश बुढा</h3>
+                        
+                        <p class="text-gray-600 mb-2 lang-en">Science Department Head</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">विज्ञान विभाग प्रमुख</p>
+                        
+                        <p class="text-sm lang-en">M.Sc. in Physics</p>
+                        <p class="text-sm lang-np hidden">एम.एससी. भौतिकशास्त्रमा</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/XyTrb3w/teacher-3.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center">
+                        <h3 class="font-semibold lang-en">Mrs. Pramila Karki</h3>
+                        <h3 class="font-semibold lang-np hidden">श्रीमती प्रमिला कार्की</h3>
+                        
+                        <p class="text-gray-600 mb-2 lang-en">English Department Head</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">अंग्रेजी विभाग प्रमुख</p>
+                        
+                        <p class="text-sm lang-en">M.A. in English Literature</p>
+                        <p class="text-sm lang-np hidden">एम.ए. अंग्रेजी साहित्यमा</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/7CNfKZt/teacher-4.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center">
+                        <h3 class="font-semibold lang-en">Mr. Krishna Shahi</h3>
+                        <h3 class="font-semibold lang-np hidden">श्री कृष्ण शाही</h3>
+                        
+                        <p class="text-gray-600 mb-2 lang-en">Mathematics Department Head</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">गणित विभाग प्रमुख</p>
+                        
+                        <p class="text-sm lang-en">M.Sc. in Mathematics</p>
+                        <p class="text-sm lang-np hidden">एम.एससी. गणितमा</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button class="btn-primary modal-trigger lang-en" data-modal="facultyModal">View All Faculty Members</button>
+                <button class="btn-primary modal-trigger lang-np hidden" data-modal="facultyModal">सबै शिक्षकहरू हेर्नुहोस्</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- News & Events Section -->
+    <section id="news" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark section-heading lang-en">News & Events</h2>
+                <h2 class="text-3xl font-bold text-dark section-heading lang-np hidden">समाचार र कार्यक्रमहरू</h2>
+            </div>
+            
+            <div class="swiper news-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                        <div class="news-img">
+                            <img src="https://i.ibb.co/1Z5jCm5/news-1.jpg" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="text-sm text-gray-500 lang-en">May 15, 2023</span>
+                            <span class="text-sm text-gray-500 lang-np hidden">जेठ १, २०८०</span>
+                            
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-en">Annual Inter-School Science Competition 2023</h3>
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-np hidden">वार्षिक अन्तर-विद्यालय विज्ञान प्रतियोगिता २०८०</h3>
+                            
+                            <p class="text-sm mb-4 lang-en">Our school hosted the annual inter-school science competition with participation from 15 schools across Mugu district.</p>
+                            <p class="text-sm mb-4 lang-np hidden">हाम्रो विद्यालयले मुगु जिल्लाभरका १५ विद्यालयहरूको सहभागितामा वार्षिक अन्तर-विद्यालय विज्ञान प्रतियोगिता आयोजना गर्यो।</p>
+                            
+                            <a href="#" class="text-primary hover:underline text-sm lang-en">Read More</a>
+                            <a href="#" class="text-primary hover:underline text-sm lang-np hidden">थप पढ्नुहोस्</a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                        <div class="news-img">
+                            <img src="https://i.ibb.co/ZgzZbNW/news-2.jpg" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="text-sm text-gray-500 lang-en">April 2, 2023</span>
+                            <span class="text-sm text-gray-500 lang-np hidden">चैत्र २०, २०७९</span>
+                            
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-en">New Computer Lab Inauguration</h3>
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-np hidden">नयाँ कम्प्युटर ल्याब उद्घाटन</h3>
+                            
+                            <p class="text-sm mb-4 lang-en">Our school inaugurated a new state-of-the-art computer lab equipped with 25 modern computers and high-speed internet.</p>
+                            <p class="text-sm mb-4 lang-np hidden">हाम्रो विद्यालयले २५ आधुनिक कम्प्युटरहरू र उच्च-गतिको इन्टरनेटले सुसज्जित नयाँ अत्याधुनिक कम्प्युटर ल्याबको उद्घाटन गर्यो।</p>
+                            
+                            <a href="#" class="text-primary hover:underline text-sm lang-en">Read More</a>
+                            <a href="#" class="text-primary hover:underline text-sm lang-np hidden">थप पढ्नुहोस्</a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                        <div class="news-img">
+                            <img src="https://i.ibb.co/DgrJ48T/news-3.jpg" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="text-sm text-gray-500 lang-en">March 10, 2023</span>
+                            <span class="text-sm text-gray-500 lang-np hidden">फाल्गुन २६, २०७९</span>
+                            
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-en">Outstanding SEE Results 2022</h3>
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-np hidden">उत्कृष्ट एसईई परिणाम २०७९</h3>
+                            
+                            <p class="text-sm mb-4 lang-en">Our students achieved outstanding results in SEE 2022 with 95% pass rate and 15 students scoring GPA above 3.6.</p>
+                            <p class="text-sm mb-4 lang-np hidden">हाम्रा विद्यार्थीहरूले एसईई २०७९ मा ९५% उत्तीर्ण दर र १५ विद्यार्थीहरूले ३.६ भन्दा माथिको जीपीए प्राप्त गरी उत्कृष्ट नतिजा हासिल गरे।</p>
+                            
+                            <a href="#" class="text-primary hover:underline text-sm lang-en">Read More</a>
+                            <a href="#" class="text-primary hover:underline text-sm lang-np hidden">थप पढ्नुहोस्</a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+                        <div class="news-img">
+                            <img src="https://i.ibb.co/5Y3bKXT/news-4.jpg" alt="News">
+                        </div>
+                        <div class="news-content">
+                            <span class="text-sm text-gray-500 lang-en">February 15, 2023</span>
+                            <span class="text-sm text-gray-500 lang-np hidden">फाल्गुन ३, २०७९</span>
+                            
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-en">Annual Cultural Program 2023</h3>
+                            <h3 class="text-lg font-bold mt-2 mb-3 lang-np hidden">वार्षिक सांस्कृतिक कार्यक्रम २०७९</h3>
+                            
+                            <p class="text-sm mb-4 lang-en">Students showcased the rich cultural heritage of Mugu through traditional dances, music, and art exhibitions.</p>
+                            <p class="text-sm mb-4 lang-np hidden">विद्यार्थीहरूले परम्परागत नृत्य, संगीत, र कला प्रदर्शनीहरू मार्फत मुगुको समृद्ध सांस्कृतिक सम्पदा प्रदर्शन गरे।</p>
+                            
+                            <a href="#" class="text-primary hover:underline text-sm lang-en">Read More</a>
+                            <a href="#" class="text-primary hover:underline text-sm lang-np hidden">थप पढ्नुहोस्</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark section-heading lang-en">School Gallery</h2>
+                <h2 class="text-3xl font-bold text-dark section-heading lang-np hidden">विद्यालय ग्यालरी</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.ibb.co/q9sXdVZ/gallery-1.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.ibb.co/0K12nZx/gallery-2.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://i.ibb.co/2Mvp3p3/gallery-3.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://i.ibb.co/LS9y7D2/gallery-4.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.ibb.co/BgPq6JH/gallery-5.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.ibb.co/mqfyvPd/gallery-6.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://i.ibb.co/pZ7jbjJ/gallery-7.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://i.ibb.co/QpLLJQv/gallery-8.jpg" alt="Gallery Image">
+                    <div class="gallery-overlay">
+                        <span class="text-white text-xl">
+                            <i class="fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark section-heading lang-en">Contact Us</h2>
+                <h2 class="text-3xl font-bold text-dark section-heading lang-np hidden">सम्पर्क गर्नुहोस्</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-primary mb-6 lang-en">Get In Touch</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-6 lang-np hidden">सम्पर्कमा रहनुहोस्</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 lang-en">Address</h4>
+                            <h4 class="font-semibold mb-1 lang-np hidden">ठेगाना</h4>
+                            <p class="lang-en">Shree Jagatmala Secondary School</p>
+                            <p class="lang-np hidden">श्री जगतमाला माध्यमिक विद्यालय</p>
+                            <p class="lang-en">Soru-11, Mugu</p>
+                            <p class="lang-np hidden">सोरु-११, मुगु</p>
+                            <p class="lang-en">Karnali Province, Nepal</p>
+                            <p class="lang-np hidden">कर्णाली प्रदेश, नेपाल</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 lang-en">Phone</h4>
+                            <h4 class="font-semibold mb-1 lang-np hidden">फोन</h4>
+                            <p>+977 87-460123</p>
+                            <p>+977 87-460124</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 lang-en">Email</h4>
+                            <h4 class="font-semibold mb-1 lang-np hidden">इमेल</h4>
+                            <p>info@jagatmalaschool.edu.np</p>
+                            <p>principal@jagatmalaschool.edu.np</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 lang-en">Office Hours</h4>
+                            <h4 class="font-semibold mb-1 lang-np hidden">कार्यालय समय</h4>
+                            <p class="lang-en">Sunday - Friday: 10:00 AM - 4:00 PM</p>
+                            <p class="lang-np hidden">आइतबार - शुक्रबार: बिहान १०:०० - साँझ ४:००</p>
+                            <p class="lang-en">Saturday: Closed</p>
+                            <p class="lang-np hidden">शनिबार: बन्द</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-3 lang-en">Connect With Us</h4>
+                        <h4 class="font-semibold mb-3 lang-np hidden">हामीसँग जोडिनुहोस्</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-full hover:bg-primary-dark transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-full hover:bg-primary-dark transition-all">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-full hover:bg-primary-dark transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-full hover:bg-primary-dark transition-all">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-primary mb-6 lang-en">Send a Message</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-6 lang-np hidden">सन्देश पठाउनुहोस्</h3>
+                    
+                    <form class="contact-form">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" placeholder="Full Name" class="lang-en">
+                                <input type="text" placeholder="पूरा नाम" class="lang-np hidden">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address" class="lang-en">
+                                <input type="email" placeholder="इमेल ठेगाना" class="lang-np hidden">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" placeholder="Phone Number" class="lang-en">
+                                <input type="text" placeholder="फोन नम्बर" class="lang-np hidden">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Subject" class="lang-en">
+                                <input type="text" placeholder="विषय" class="lang-np hidden">
+                            </div>
+                        </div>
+                        <textarea rows="5" placeholder="Your Message" class="lang-en"></textarea>
+                        <textarea rows="5" placeholder="तपाईंको सन्देश" class="lang-np hidden"></textarea>
+                        
+                        <button type="submit" class="btn-primary w-full lang-en">Send Message</button>
+                        <button type="submit" class="btn-primary w-full lang-np hidden">सन्देश पठाउनुहोस्</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="mt-16" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-primary mb-6 text-center lang-en">Our Location</h3>
+                <h3 class="text-2xl font-bold text-primary mb-6 text-center lang-np hidden">हाम्रो स्थान</h3>
+                
+                <div class="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112194.61397635292!2d82.43761782482657!3d29.747983962403483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0e6f7e8b7f74d%3A0xf6a05a18933ee69e!2sMugu%2C%20Nepal!5e0!3m2!1sen!2sus!4v1651123456789!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Admission Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 lang-en">Admissions Open for 2023-24</h2>
+            <h2 class="text-3xl font-bold mb-6 lang-np hidden">२०८०-८१ का लागि भर्ना खुल्ला छ</h2>
+            
+            <p class="text-lg mb-8 max-w-3xl mx-auto lang-en">Join our school family and embark on a journey of academic excellence, character development, and holistic growth. Limited seats available for all grades.</p>
+            <p class="text-lg mb-8 max-w-3xl mx-auto lang-np hidden">हाम्रो विद्यालय परिवारमा सामेल हुनुहोस् र शैक्षिक उत्कृष्टता, चरित्र विकास र समग्र वृद्धिको यात्रामा निस्कनुहोस्। सबै कक्षाहरूका लागि सीमित सिटहरू उपलब्ध छन्।</p>
+            
+            <button class="bg-white text-primary py-3 px-8 rounded-full font-bold text-lg hover:bg-gray-100 transition-all modal-trigger lang-en" data-modal="admissionModal">Apply Now</button>
+            <button class="bg-white text-primary py-3 px-8 rounded-full font-bold text-lg hover:bg-gray-100 transition-all modal-trigger lang-np hidden" data-modal="admissionModal">अहिले आवेदन दिनुहोस्</button>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 lang-en">About Us</h3>
+                    <h3 class="text-xl font-bold mb-6 lang-np hidden">हाम्रो बारेमा</h3>
+                    
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.ibb.co/XL3D7F2/school-logo.png" alt="School Logo" class="w-12 h-12 mr-3">
+                        <div>
+                            <div class="text-white font-bold text-lg lang-en">Shree Jagatmala Secondary School</div>
+                            <div class="text-white font-bold text-lg lang-np hidden">श्री जगतमाला माध्यमिक विद्यालय</div>
+                            <div class="text-gray-400 text-xs lang-en">Established: 2036 B.S. (1979 A.D.)</div>
+                            <div class="text-gray-400 text-xs lang-np hidden">स्थापना: २०३६ साल</div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-4 lang-en">A premier educational institution in Mugu district providing quality education to students for over four decades.</p>
+                    <p class="text-gray-400 mb-4 lang-np hidden">मुगु जिल्लामा चार दशकभन्दा बढी समयदेखि विद्यार्थीहरूलाई गुणस्तरीय शिक्षा प्रदान गर्दै आएको एक प्रमुख शैक्षिक संस्था।</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 lang-en">Quick Links</h3>
+                    <h3 class="text-xl font-bold mb-6 lang-np hidden">द्रुत लिङ्कहरू</h3>
+                    
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-all lang-en">About Us</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-all lang-np hidden">हाम्रो बारेमा</a></li>
+                        
+                        <li><a href="#academics" class="text-gray-400 hover:text-white transition-all lang-en">Academic Programs</a></li>
+                        <li><a href="#academics" class="text-gray-400 hover:text-white transition-all lang-np hidden">शैक्षिक कार्यक्रमहरू</a></li>
+                        
+                        <li><a href="#faculty" class="text-gray-400 hover:text-white transition-all lang-en">Faculty</a></li>
+                        <li><a href="#faculty" class="text-gray-400 hover:text-white transition-all lang-np hidden">शिक्षकहरू</a></li>
+                        
+                        <li><a href="#news" class="text-gray-400 hover:text-white transition-all lang-en">News & Events</a></li>
+                        <li><a href="#news" class="text-gray-400 hover:text-white transition-all lang-np hidden">समाचार र कार्यक्रमहरू</a></li>
+                        
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-all lang-en">Contact Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-all lang-np hidden">सम्पर्क गर्नुहोस्</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 lang-en">Useful Links</h3>
+                    <h3 class="text-xl font-bold mb-6 lang-np hidden">उपयोगी लिङ्कहरू</h3>
+                    
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Student Portal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">विद्यार्थी पोर्टल</a></li>
+                        
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-en">E-Library</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">ई-पुस्तकालय</a></li>
+                        
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Results</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">परिणामहरू</a></li>
+                        
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Downloads</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">डाउनलोडहरू</a></li>
+                        
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Career</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">रोजगारी</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6 lang-en">Newsletter</h3>
+                    <h3 class="text-xl font-bold mb-6 lang-np hidden">न्युजलेटर</h3>
+                    
+                    <p class="text-gray-400 mb-4 lang-en">Subscribe to our newsletter to get the latest updates and news.</p>
+                    <p class="text-gray-400 mb-4 lang-np hidden">नवीनतम अपडेट र समाचारहरू प्राप्त गर्न हाम्रो न्युजलेटरमा सदस्यता लिनुहोस्।</p>
+                    
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email" class="bg-gray-800 text-white py-2 px-4 rounded-l-md w-full focus:outline-none">
+                        <button class="bg-primary text-white py-2 px-4 rounded-r-md hover:bg-primary-dark transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0 lang-en">&copy; 2023 Shree Jagatmala Secondary School. All Rights Reserved.</p>
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0 lang-np hidden">&copy; २०८० श्री जगतमाला माध्यमिक विद्यालय। सर्वाधिकार सुरक्षित।</p>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">गोपनीयता नीति</a>
+                        
+                        <a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">सेवा सर्तहरू</a>
+                        
+                        <a href="#" class="text-gray-400 hover:text-white transition-all lang-en">Sitemap</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all lang-np hidden">साइटम्याप</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Faculty Modal -->
+    <div class="modal" id="facultyModal">
+        <div class="modal-content">
+            <span class="modal-close" id="facultyModalClose">
+                <i class="fas fa-times"></i>
+            </span>
+            <h2 class="text-2xl font-bold text-primary mb-6 lang-en">All Faculty Members</h2>
+            <h2 class="text-2xl font-bold text-primary mb-6 lang-np hidden">सबै शिक्षकहरू</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="faculty-card">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/LQCnZ7P/principal.jpg" alt="Principal">
+                    </div>
+                    <div class="faculty-info text-center p-4">
+                        <h3 class="font-semibold lang-en">Mr. Narajit Malla</h3>
+                        <h3 class="font-semibold lang-np hidden">श्री नरजित मल्ल</h3>
+                        <p class="text-gray-600 mb-2 lang-en">Principal</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">प्रधानाध्यापक</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/FHD9fpj/teacher-1.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center p-4">
+                        <h3 class="font-semibold lang-en">Mrs. Sabita Bhandari</h3>
+                        <h3 class="font-semibold lang-np hidden">श्रीमती सबिता भण्डारी</h3>
+                        <p class="text-gray-600 mb-2 lang-en">Vice Principal</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">उप-प्रधानाध्यापक</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/T0d9Qrd/teacher-2.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center p-4">
+                        <h3 class="font-semibold lang-en">Mr. Ramesh Budha</h3>
+                        <h3 class="font-semibold lang-np hidden">श्री रमेश बुढा</h3>
+                        <p class="text-gray-600 mb-2 lang-en">Science Department Head</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">विज्ञान विभाग प्रमुख</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/XyTrb3w/teacher-3.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center p-4">
+                        <h3 class="font-semibold lang-en">Mrs. Pramila Karki</h3>
+                        <h3 class="font-semibold lang-np hidden">श्रीमती प्रमिला कार्की</h3>
+                        <p class="text-gray-600 mb-2 lang-en">English Department Head</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">अंग्रेजी विभाग प्रमुख</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/7CNfKZt/teacher-4.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center p-4">
+                        <h3 class="font-semibold lang-en">Mr. Krishna Shahi</h3>
+                        <h3 class="font-semibold lang-np hidden">श्री कृष्ण शाही</h3>
+                        <p class="text-gray-600 mb-2 lang-en">Mathematics Department Head</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">गणित विभाग प्रमुख</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card">
+                    <div class="faculty-img">
+                        <img src="https://i.ibb.co/L5b1q22/teacher-5.jpg" alt="Teacher">
+                    </div>
+                    <div class="faculty-info text-center p-4">
+                        <h3 class="font-semibold lang-en">Ms. Sarita Thapa</h3>
+                        <h3 class="font-semibold lang-np hidden">सुश्री सरिता थापा</h3>
+                        <p class="text-gray-600 mb-2 lang-en">Social Studies Teacher</p>
+                        <p class="text-gray-600 mb-2 lang-np hidden">सामाजिक अध्ययन शिक्षक</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Admission Modal -->
+    <div class="modal" id="admissionModal">
+        <div class="modal-content">
+            <span class="modal-close" id="admissionModalClose">
+                <i class="fas fa-times"></i>
+            </span>
+            <h2 class="text-2xl font-bold text-primary mb-6 lang-en">Admission Form</h2>
+            <h2 class="text-2xl font-bold text-primary mb-6 lang-np hidden">भर्ना फारम</h2>
+            
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="md:col-span-2">
+                    <h3 class="font-semibold mb-2 lang-en">Student Information</h3>
+                    <h3 class="font-semibold mb-2 lang-np hidden">विद्यार्थी जानकारी</h3>
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">First Name *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">पहिलो नाम *</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Last Name *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">थर *</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Date of Birth *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">जन्म मिति *</label>
+                    <input type="date" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Gender *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">लिङ्ग *</label>
+                    <select class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                        <option class="lang-en">Select Gender</option>
+                        <option class="lang-np hidden">लिङ्ग छान्नुहोस्</option>
+                        <option class="lang-en">Male</option>
+                        <option class="lang-np hidden">पुरुष</option>
+                        <option class="lang-en">Female</option>
+                        <option class="lang-np hidden">महिला</option>
+                        <option class="lang-en">Other</option>
+                        <option class="lang-np hidden">अन्य</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Applying for Grade *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">कक्षाको लागि आवेदन दिँदै *</label>
+                    <select class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                        <option class="lang-en">Select Grade</option>
+                        <option class="lang-np hidden">कक्षा छान्नुहोस्</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Previous School (If any)</label>
+                    <label class="block mb-1 text-sm lang-np hidden">अघिल्लो विद्यालय (यदि छ भने)</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div class="md:col-span-2">
+                    <h3 class="font-semibold mb-2 lang-en">Parent/Guardian Information</h3>
+                    <h3 class="font-semibold mb-2 lang-np hidden">अभिभावक जानकारी</h3>
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Parent/Guardian Name *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">अभिभावकको नाम *</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Relation to Student *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">विद्यार्थीसँगको सम्बन्ध *</label>
+                    <select class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                        <option class="lang-en">Select Relation</option>
+                        <option class="lang-np hidden">सम्बन्ध छान्नुहोस्</option>
+                        <option class="lang-en">Father</option>
+                        <option class="lang-np hidden">बुवा</option>
+                        <option class="lang-en">Mother</option>
+                        <option class="lang-np hidden">आमा</option>
+                        <option class="lang-en">Guardian</option>
+                        <option class="lang-np hidden">अभिभावक</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Contact Number *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">सम्पर्क नम्बर *</label>
+                    <input type="tel" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div>
+                    <label class="block mb-1 text-sm lang-en">Email Address</label>
+                    <label class="block mb-1 text-sm lang-np hidden">इमेल ठेगाना</label>
+                    <input type="email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div class="md:col-span-2">
+                    <label class="block mb-1 text-sm lang-en">Address *</label>
+                    <label class="block mb-1 text-sm lang-np hidden">ठेगाना *</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-primary">
+                </div>
+                
+                <div class="md:col-span-2">
+                    <button class="btn-primary w-full lang-en">Submit Application</button>
+                    <button class="btn-primary w-full lang-np hidden">आवेदन पेश गर्नुहोस्</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    </body>
+    </html>
